@@ -6,9 +6,13 @@ var text = document.getElementById("texto");
 
 var muestra = document.getElementById("muestra")
 
-var range = document.getElementById("tamano")
+var range = document.getElementById("valor")
 
-var tamano = document.getElementById ("valor")
+var tamano = document.getElementById("tamano")
+
+var valor = document.getElementById("valor")
+
+var fuente = document.getElementById("fuente") 
 
 
 // PASO 2: texto en vivo
@@ -29,18 +33,31 @@ texto.addEventListener("input", function() {
 
 // PASO 3: deslizador
 
-// console.log("s");
+
 
 tamano.addEventListener("input", function () {
 
-   if (tamano.value < "48px") {
-       
+   muestra.style.fontSize = tamano.value + "px";
 
-
-   }
-   
-   else {
-      muestra.fontSize = tamano.value
-
-   }
+// Acedemos al contenido de texto de valor y lo igualamos al valor de tamaño
+   valor.textContent = tamano.value + "px";
 })
+
+
+// PASO 4: tipografia (font-family)
+
+fuente.addEventListener("change", function() {
+   muestra.style.fontFamily = fuente.value;
+})
+
+// EXTRA
+
+// COLOR
+// En html necesitamos un elemento <input type="color">
+// NEGRITA
+
+
+// SUPEREXTRA HACER RESET
+
+
+
