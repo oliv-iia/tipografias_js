@@ -52,9 +52,15 @@ fuente.addEventListener("change", function() {
 
 // EXTRA
 
+
 // COLOR
 // En html necesitamos un elemento <input type="color">
+
+
+
 // NEGRITA
+
+
 
 
 // SUPEREXTRA HACER RESET
